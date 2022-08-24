@@ -1,0 +1,19 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["joe@joeshaw.org"]
+description = ""
+language = "go"
+manifest_version = 2
+name = "example"
+service_id = "0ytc6DfGD4JmY3ljQ3ncdX"
+
+[local_server]
+
+  [local_server.backends]
+
+    [local_server.backends.ipv4]
+      url = "https://ipv4.joeshaw.org"
+
+    [local_server.backends.ipv6]
+      url = "https://ipv6.joeshaw.org"
